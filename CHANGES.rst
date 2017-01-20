@@ -30,6 +30,8 @@ New Features
 
 - ``astropy.stats``
 
+  - Implemented statistical estimators for Ripley's K Function. [#5712]
+
 - ``astropy.sphinx``
 
 - ``astropy.table``
