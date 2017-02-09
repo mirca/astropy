@@ -8,11 +8,9 @@ from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 import numpy as np
 
+
 __all__ = ['bayesian_info_criterion', 'bayesian_info_criterion_lsq',
            'akaike_info_criterion', 'akaike_info_criterion_lsq']
-
-__doctest_requires__ = {'bayesian_info_criterion_lsq': ['scipy'],
-                        'akaike_info_criterion_lsq': ['scipy']}
 
 
 def bayesian_info_criterion(log_likelihood, n_params, n_samples):
