@@ -74,7 +74,7 @@ dimensionless).  For instance, normally the following raise exceptions::
     ...
   UnitConversionError: 'cycle2 kg m2 / s2' and 'J' (energy) are not convertible
 
-But when passing we pass the proper conversion function,
+But when passing the proper conversion function,
 :func:`~astropy.units.equivalencies.dimensionless_angles`, it works.
 
   >>> u.deg.to('', equivalencies=u.dimensionless_angles())  # doctest: +FLOAT_CMP
@@ -119,7 +119,7 @@ Spectral (Doppler) equivalencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Spectral equivalencies allow you to convert between wavelength,
-frequency, energy, and wave number but not to velocity, which is
+frequency, energy, and wave number, but not to velocity, which is
 frequently the quantity of interest.
 
 It is fairly straightforward to define the equivalency, but note that there are
